@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cupcakes.InventarioController">
+  <children>
+  <Button fx:id="btnSalir" layoutX="573.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnSalir_click" prefHeight="25.0" prefWidth="149.0" text="Salir" textFill="RED">
+    <font>
+      <Font name="System Bold Italic" size="12.0" fx:id="x1" />
+    </font>
+  </Button>
+  <Button fx:id="btnVolver" font="$x1" layoutX="573.0" layoutY="269.0" mnemonicParsing="false" onAction="#btnVolver_click" prefHeight="25.0" prefWidth="149.0" text="Volver" textFill="#0029ff" />
+    <TableView fx:id="DataInventario" layoutX="182.0" layoutY="45.0" prefHeight="283.0" prefWidth="380.0">
+      <columns>
+        <TableColumn fx:id="col_nombre" prefWidth="71.0" text="Nombre" />
+        <TableColumn fx:id="col_marca" minWidth="0.0" prefWidth="60.0" text="Marca" />
+        <TableColumn fx:id="col_cantidad" minWidth="0.0" prefWidth="70.0" text="Cantidad" />
+        <TableColumn fx:id="col_costo" minWidth="0.0" prefWidth="66.0" text="Costo" />
+            <TableColumn fx:id="col_fecha" minWidth="0.0" prefWidth="113.0" text="Fecha Vencimiento" />
+      </columns>
+    </TableView>
+      <VBox layoutX="25.0" layoutY="41.0" spacing="8.0">
+         <children>
+          <Label layoutX="25.0" layoutY="41.0" prefHeight="25.0" prefWidth="105.0" text="Crear Insumo" />
+          <TextField id="numero_crear" fx:id="txtNombre" layoutX="26.0" layoutY="74.0" promptText="Nombre" />
+            <TextField id="numero_crear" fx:id="txtMarca" layoutX="25.0" layoutY="108.0" promptText="Marca" />
+            <Label layoutX="25.0" layoutY="133.0" prefHeight="25.0" prefWidth="105.0" text="Ingrese Metrica:" />
+            <ChoiceBox fx:id="ChoiceMetrica" layoutX="26.0" layoutY="165.0" prefWidth="150.0" />
+            <TextField id="numero_crear" fx:id="txtCantidad" layoutX="25.0" layoutY="196.0" promptText="Cantidad" />
+            <TextField id="numero_crear" fx:id="txtCosto" layoutX="25.0" layoutY="221.0" promptText="Costo" />
+            <DatePicker fx:id="Fecha_Crear" layoutX="26.0" layoutY="256.0" prefHeight="25.0" prefWidth="150.0" promptText="Fecha Vencimiento" />
+          <Button fx:id="btnCrear" font="$x1" layoutX="26.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnCrear_click" prefHeight="25.0" prefWidth="149.0" text="Crear" />
+         </children>
+      </VBox>
+    <Label layoutX="356.0" layoutY="18.0" text="Lista de Insumos" />
+      <Label layoutX="21.0" layoutY="7.0" text="Inventario">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutX="572.0" layoutY="45.0" spacing="12.0">
+         <children>
+          <Label layoutX="572.0" layoutY="45.0" text="Eliminar Insumo" />
+            <TextField id="numero_crear" fx:id="txtNombre_Eliminar" layoutX="572.0" layoutY="69.0" promptText="Nombre" />
+            <TextField id="numero_crear" fx:id="txtMarca_Eliminar" layoutX="572.0" layoutY="106.0" promptText="Marca" />
+            <DatePicker fx:id="Fecha_Eliminar" layoutX="572.0" layoutY="151.0" prefHeight="25.0" prefWidth="150.0" promptText="Fecha Vencimiento" />
+          <Button fx:id="btnEliminar" font="$x1" layoutX="572.0" layoutY="207.0" mnemonicParsing="false" onAction="#btnEliminar_click" prefHeight="25.0" prefWidth="149.0" text="Eliminar" />
+         </children>
+      </VBox>
+      <Button fx:id="btnActualizar" layoutX="573.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnActualizar_click" prefHeight="25.0" prefWidth="149.0" text="Actualizar Stock" />
+  </children>
+</AnchorPane>

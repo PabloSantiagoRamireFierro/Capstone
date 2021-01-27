@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cupcakes.CajaController">
+   <children>
+      <Label layoutX="23.0" layoutY="9.0" text="Caja">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="23.0" layoutY="46.0" prefHeight="206.0" prefWidth="335.0">
+        <columns>
+          <TableColumn fx:id="col_pro" prefWidth="67.0" text="Producto" />
+          <TableColumn fx:id="col_total" prefWidth="87.0" text="Total Vendido" />
+            <TableColumn fx:id="col_ingresos" prefWidth="77.0" text="Ingresos" />
+            <TableColumn fx:id="col_fecha" prefWidth="102.0" text="Fecha de Ingreso" />
+        </columns>
+      </TableView>
+      <VBox layoutX="30.0" layoutY="265.0" spacing="16.0" />
+      <Button fx:id="btnVolver" layoutX="381.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnVolver_click" prefHeight="27.0" prefWidth="303.0" text="Volver a Menu" textFill="#2001eb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRefrescar" layoutX="379.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnRefrescar_click" prefHeight="27.0" prefWidth="303.0" text="Refrescar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="IngresoTotal" layoutX="88.0" layoutY="14.0" text="Ingreso Total: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <VBox fx:id="choiceProducto" layoutX="384.0" layoutY="52.0" spacing="13.0">
+         <children>
+            <Label layoutX="384.0" layoutY="52.0" text="Consultas">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="384.0" layoutY="79.0" text="Seleccionar Producto" />
+         </children>
+      </VBox>
+      <Label layoutX="548.0" layoutY="52.0" text="Ingresos o Retiros">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="83.0" text="Metodo y Cantidad:" />
+      <ChoiceBox fx:id="choiceIR" layoutX="548.0" layoutY="110.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="txtIR" layoutX="549.0" layoutY="150.0" prefHeight="25.0" prefWidth="134.0" promptText="Cantidad" />
+      <Button fx:id="btnConsultar" layoutX="380.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnConsultar_click" prefHeight="25.0" prefWidth="150.0" text="Consultar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dateIngreso" layoutX="380.0" layoutY="150.0" prefHeight="25.0" prefWidth="149.0" promptText="Fecha " />
+      <ChoiceBox fx:id="choiceReserva" layoutX="379.0" layoutY="110.0" prefWidth="150.0" />
+      <Button fx:id="btnRegistrar" layoutX="548.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnRegistrar_click" prefHeight="25.0" prefWidth="134.0" text="Ejecutar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

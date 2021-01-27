@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cupcakes.GestionProductosController">
+  <children>
+    <Label layoutX="27.0" layoutY="14.0" text="Crear Producto">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+    <VBox id="VBox" alignment="CENTER" layoutX="27.0" layoutY="38.0" spacing="10.0">
+      <children>
+        <TextField fx:id="txtNombre_Crear" prefWidth="120.0" promptText="Nombre" />
+        <TextField fx:id="txtTipo_Crear" prefWidth="120.0" promptText="Tipo" />
+      </children>
+    </VBox>
+    <Label layoutX="26.0" layoutY="190.0" text="Editar Producto">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+    <VBox id="VBox" alignment="CENTER" layoutX="25.0" layoutY="198.0" spacing="10.0" />
+    <Label layoutX="603.0" layoutY="166.0" text="Eliminar Producto">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+    <TextField fx:id="txtId_Eliminar" layoutX="603.0" layoutY="198.0" prefWidth="120.0" promptText="Ingrese ID" />
+    <Button fx:id="btnCrear" layoutX="27.0" layoutY="143.0" mnemonicParsing="false" onAction="#btnCrear_click" prefWidth="120.0" text="Crear">
+      <font>
+        <Font name="System Bold Italic" size="12.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="btnEditar" font="$x1" layoutX="25.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnEditar_click" prefWidth="120.0" text="Editar" />
+    <Button fx:id="btnEliminar" font="$x1" layoutX="603.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnEliminar_click" prefWidth="119.0" text="Eliminar" />
+    <VBox id="VBox" alignment="CENTER" layoutX="568.0" layoutY="45.0" spacing="10.0" />
+    <Label layoutX="232.0" layoutY="16.0" text="Gestion de Productos">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font></Label>
+    <TableView id="TableUsuario" fx:id="TablaProducto" layoutX="160.0" layoutY="50.0" prefHeight="309.0" prefWidth="433.0">
+      <columns>
+        <TableColumn fx:id="ColId" maxWidth="5000.0" minWidth="10.0" prefWidth="36.0" text="Id" />
+        <TableColumn fx:id="ColNombreProducto" maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Nombre Producto" />
+        <TableColumn fx:id="ColTipo" maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" text="Tipo" />
+        <TableColumn fx:id="ColStock" maxWidth="5000.0" minWidth="10.0" prefWidth="66.0" text="Stock" />
+            <TableColumn fx:id="ColPrecio" maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" text="Precio" />
+            <TableColumn fx:id="ColFecha" maxWidth="5000.0" minWidth="10.0" prefWidth="103.0" text="Fecha Creación" />
+      </columns>
+    </TableView>
+    <Button fx:id="btnVolver" layoutX="603.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnVolver_click" prefHeight="21.0" prefWidth="120.0" text="Volver" textFill="#0029ff" />
+    <Button fx:id="btnSalir" layoutX="603.0" layoutY="290.0" mnemonicParsing="false" onAction="#btnSalir_click" prefHeight="21.0" prefWidth="120.0" text="Salir" textFill="RED" />
+  <TextField fx:id="txtPrecio_Crear" layoutX="27.0" layoutY="107.0" prefWidth="120.0" promptText="Precio" />
+  <TextField id="txtContraseña" fx:id="txtAtributo_Editar" layoutX="27.0" layoutY="297.0" prefWidth="120.0" promptText="Dato a Modificar" />
+      <Label layoutX="27.0" layoutY="238.0" text="Seleccione atributo" />
+  <ChoiceBox fx:id="ChoiceAtributo_Editar" layoutX="25.0" layoutY="260.0" prefWidth="120.0">
+    <items>
+      <FXCollections fx:factory="observableArrayList" />
+    </items>
+  </ChoiceBox>
+  <TextField id="txtNombreUsuario" fx:id="txtId_Editar" layoutX="27.0" layoutY="213.0" prefWidth="120.0" promptText="Ingrese ID" />
+      <Button fx:id="btnActualizarStock" layoutX="603.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnActualizarStock_click" prefHeight="25.0" prefWidth="119.0" text="Actualizar Stock" />
+  </children>
+</AnchorPane>

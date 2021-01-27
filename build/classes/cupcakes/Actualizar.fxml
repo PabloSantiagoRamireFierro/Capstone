@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cupcakes.ActualizarController">
+   <children>
+      <Pane prefHeight="458.0" prefWidth="876.0">
+         <children>
+            <TableView fx:id="TablaProducto" layoutX="12.0" layoutY="157.0" prefHeight="290.0" prefWidth="433.0">
+               <columns>
+                  <TableColumn fx:id="ColId" maxWidth="5000.0" minWidth="10.0" prefWidth="36.0" text="Id" />
+                  <TableColumn fx:id="ColNombreProducto" maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Nombre Producto" />
+                  <TableColumn fx:id="ColTipo" maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" text="Tipo" />
+                  <TableColumn fx:id="ColStock" maxWidth="5000.0" minWidth="10.0" prefWidth="66.0" text="Stock" />
+                  <TableColumn fx:id="ColPrecio" maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" text="Precio" />
+                  <TableColumn fx:id="ColFecha" maxWidth="5000.0" minWidth="10.0" prefWidth="103.0" text="Fecha Creación" />
+               </columns>
+            </TableView>
+            <TableView fx:id="TablaInventario" layoutX="460.0" layoutY="157.0" prefHeight="290.0" prefWidth="396.0">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="38.0" text="Id" />
+                  <TableColumn fx:id="col_nombre" prefWidth="61.0" text="Nombre" />
+                  <TableColumn fx:id="col_marca" minWidth="0.0" prefWidth="63.0" text="Marca" />
+                  <TableColumn fx:id="col_cantidad" minWidth="0.0" prefWidth="66.0" text="Cantidad" />
+                  <TableColumn fx:id="col_costo" minWidth="0.0" prefWidth="51.0" text="Costo" />
+                  <TableColumn fx:id="col_fecha" minWidth="0.0" prefWidth="116.0" text="Fecha Vencimiento" />
+               </columns>
+            </TableView>
+            <Label layoutX="612.0" layoutY="123.0" text="INSUMOS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="159.0" layoutY="123.0" text="PRODUCTOS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="14.0" text="ACTUALIZACIÓN DE STOCK">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="ChoiceSeleccion" layoutX="22.0" layoutY="91.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label layoutX="22.0" layoutY="62.0" text="Seleccione productos o insumos:" />
+            <TextField fx:id="txtStock" layoutX="378.0" layoutY="91.0" prefHeight="25.0" prefWidth="152.0" />
+            <Label layoutX="378.0" layoutY="62.0" text="Ingrese la cantidad de Stock:" />
+            <Label fx:id="LabelUtil" layoutX="546.0" layoutY="62.0" text="Ingrese la fecha correspondiente:" />
+            <Button fx:id="btnInsumos" layoutX="565.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnInsumos_click" prefHeight="25.0" prefWidth="138.0" text="Volver a Insumos" />
+            <Button fx:id="btnProductos" layoutX="721.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnProductos_click" prefHeight="25.0" prefWidth="138.0" text="Volver a Productos" />
+            <Button fx:id="btnActualizar" layoutX="732.0" layoutY="82.0" mnemonicParsing="false" onAction="#btnActualizar_click" prefHeight="34.0" prefWidth="132.0" text="Actualizar">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="Fecha1" layoutX="546.0" layoutY="91.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField fx:id="txtId" layoutX="221.0" layoutY="91.0" prefHeight="25.0" prefWidth="138.0" />
+            <Label layoutX="221.0" layoutY="62.0" text="Ingrese ID:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

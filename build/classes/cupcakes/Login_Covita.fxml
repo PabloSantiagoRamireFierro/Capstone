@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" blendMode="SRC_OVER" cache="true" cacheHint="DEFAULT" depthTest="DISABLE" disable="false" focusTraversable="false" prefHeight="310.0" prefWidth="237.0" visible="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cupcakes.LoginController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" layoutX="19.0" layoutY="86.0" spacing="13.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <Label id="lblUsuario" text="Ingrese RUT">
+                     <font>
+                        <Font name="Calisto MT" size="15.0" />
+                     </font></Label>
+            <TextField id="TextFieldUsuario" fx:id="txtRut" prefWidth="200.0" />
+            <Label id="labelContraseña" text="Contraseña">
+                     <font>
+                        <Font name="Calisto MT" size="15.0" />
+                     </font></Label>
+            <PasswordField id="TextFieldContraseña" fx:id="txtContrasena" prefWidth="200.0" text="" />
+          </children>
+        </VBox>
+        <Button id="BotonIngresar" fx:id="btnIngresar" mnemonicParsing="false" onAction="#btnIngresar_click" prefHeight="39.0" prefWidth="201.0" text="Ingresar">
+          <font>
+            <Font name="System Bold" size="18.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button id="BotonSalir" fx:id="btnSalir" mnemonicParsing="false" onAction="#btnSalir_click" prefHeight="43.0" prefWidth="199.0" text="Salir">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+      </children>
+    </VBox>
+    <VBox id="VBox" alignment="CENTER" layoutX="18.0" layoutY="178.0" spacing="15.0" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Imagen/logo.jpeg" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>

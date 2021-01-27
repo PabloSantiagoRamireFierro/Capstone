@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="158.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="cupcakes.MenuInventarioController">
+   <children>
+      <AnchorPane prefHeight="178.0" prefWidth="393.0">
+         <children>
+            <Label layoutX="14.0" layoutY="15.0" text="Seleccione Inventario">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="87.0" layoutX="14.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="178.0" />
+            <Button fx:id="btnProducto" layoutX="35.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnProducto_click" prefHeight="36.0" prefWidth="137.0" text="Productos">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="87.0" layoutX="201.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="178.0" />
+            <Button fx:id="btnInsumos" layoutX="216.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnInsumos_click" prefHeight="36.0" prefWidth="148.0" text="Insumos">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnVolver" layoutX="326.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnVolver_click" text="Volver" textFill="#0b0fff">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="24.0" layoutY="133.0" text="Registro, modificación de productos">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="133.0" text="Registro, modificación de Insumos">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="48.0" text="Seleccione el registro que quiere actualizar:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
